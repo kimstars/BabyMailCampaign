@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- Tell the browser to be responsive to screen width -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- Favicon icon -->
-      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-      <title>SniperPhish - The Web-Email Spear Phishing Toolkit</title>
-      <!-- Custom CSS -->
-      <link rel="stylesheet" type="text/css" href="css/style.min.css">
-      <link rel="stylesheet" type="text/css" href="css/toastr.min.css">
-   </head>
-   <body>
-      <!-- ============================================================== -->
-      <!-- Preloader - style you can find in spinners.css -->
-      <!-- ============================================================== -->
-      <div class="preloader">
-         <div class="lds-ripple">
-            <div class="lds-pos"></div>
-            <div class="lds-pos"></div>
-         </div>
-      </div>
-      <!-- ============================================================== -->
-      <!-- Main wrapper - style you can find in pages.scss -->
-      <!-- ============================================================== -->
-      <div id="main-wrapper">
-         <!-- ============================================================== -->
-         <!-- Topbar header - style you can find in pages.scss -->
-         <!-- ============================================================== -->
-         <?php include_once 'z_menu.php' ?>
-         <!-- ============================================================== -->
-         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-         <!-- ============================================================== -->
-         <!-- ============================================================== -->
-         <!-- Page wrapper  -->
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+   {% block content %}
+            <!-- Page wrapper  -->
          <!-- ============================================================== -->
          <div class="page-wrapper">
             <!-- ============================================================== -->
@@ -137,29 +102,5 @@
          <!-- ============================================================== -->
          <!-- End Page wrapper  -->
          <!-- ============================================================== -->
-      </div>
-      <!-- ============================================================== -->
-      <!-- End Wrapper -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- All Jquery -->
-      <!-- ============================================================== -->
-      <script src="js/libs/jquery/jquery-3.6.0.min.js"></script>
-      <script src="js/libs/js.cookie.min.js"></script>
-      <!-- Bootstrap tether Core JavaScript -->
-      <script src="js/libs/bootstrap.min.js"></script>
-      <!--Wave Effects -->
-      <script src="js/libs/perfect-scrollbar.jquery.min.js"></script>
-      <!--Custom JavaScript -->
-      <script src="js/libs/custom.min.js"></script>
-      <!--This page JavaScript -->
-      <!-- Charts js Files -->
-      <script src="js/libs/apexcharts.js"></script>
-      <script src="js/libs/moment.min.js"></script>
-      <script src="js/libs/moment-timezone-with-data.min.js"></script>
-      <script src="js/common_scripts.js"></script>
-      <script src="js/home_functions.js"></script>
-      <script defer src="js/libs/sidebarmenu.js"></script>
-      <script defer src="js/libs/toastr.min.js"></script>
-   </body>
-</html>
+
+   {% endblock %}

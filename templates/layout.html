@@ -9,7 +9,7 @@
       <meta name="author" content="">
       <!-- Favicon icon -->
       <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-      <title>SniperPhish - The Web-Email Spear Phishing Toolkit</title>
+      <title>{% block title %}{% endblock %}</title>
       <!-- Custom CSS -->
       <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
       <link rel="stylesheet" type="text/css" href="assets/css/toastr.min.css">
@@ -178,104 +178,10 @@
          <!-- ============================================================== -->
          <!-- Page wrapper  -->
          <!-- ============================================================== -->
-         <div class="page-wrapper">
-            <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <div class="page-breadcrumb">
-               <div class="row">
-                  <div class="col-12 d-flex no-block align-items-center">
-                     <!--<h4 class="page-title">Home</h4> -->
-                  </div>
-               </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div class="container-fluid">
-               <!-- ============================================================== -->
-               <!-- Sales Cards  -->
-               <!-- ============================================================== -->
-               <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4">
-                     <div class="bg-dark card card-hover">
-                        <div class="card-body">
-                           <div class="d-flex">
-                              <div class="mr-3 align-self-center text-white"><i class="mdi mdi-email mdi-36px"></i></div>
-                              <div class="align-self-center">
-                                 <h7 class="text-white mt-2 mb-0">Mail Campaign</h7>
-                                 <h5 class="mt-0 text-white" id="lb_mailcamp">Total: 0, Active: 0</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4">
-                     <div class="bg-dark card card-hover">
-                        <div class="card-body">
-                           <div class="d-flex">
-                              <div class="mr-3 align-self-center text-white"><i class="mdi mdi-web mdi-36px"></i></div>
-                              <div class="align-self-center">
-                                 <h7 class="text-white mt-2 mb-0">Web Trackers</h7>
-                                 <h5 class="mt-0 text-white" id="lb_webtracker">Total: 0, Active: 0</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4">
-                     <div class="bg-dark card card-hover">
-                        <div class="card-body">
-                           <div class="d-flex">
-                              <div class="mr-3 align-self-center text-white"><i class="mdi mdi-watch-vibrate mdi-36px"></i></div>
-                              <div class="align-self-center">
-                                 <h7 class="text-white mt-2 mb-0">Quick Trackers</h7>
-                                 <h5 class="mt-0 text-white" id="lb_quicktracker">Total: 0, Active: 0</h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="card">
-                        <div class="card-body">
-                           <h5 class="card-title">Campaigns</h5>
-                           <div id="graph_overview" style="height: 140px;">                                  
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="card">
-                        <div class="card-body">
-                           <h5 class="card-title">Campaigns Timeline</h5>
-                           <div id="graph_timeline_all" style="height: 140px;"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- Modal -->
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                © 2023 | All Rights Reserved 
-             </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
-         </div>
+<main> 
+   {% block content %}
+   {% endblock %}
+</main>
          <!-- ============================================================== -->
          <!-- End Page wrapper  -->
          <!-- ============================================================== -->

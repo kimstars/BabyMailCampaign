@@ -27,10 +27,9 @@ def login():
 	"""Login page"""
 	return render_template("login.html")
 
-@mailcamp.route("/mailcamplist")
-def mailcamplist():
-    
-    
+@mailcamp.route("/addCampaign", methods= ["GET","POST"])
+def addcampaign():
+    return render_template("MailCampaignList.html")
 OUTPUT_DIR = os.path.abspath("/output")
 
 
