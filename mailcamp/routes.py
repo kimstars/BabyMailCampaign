@@ -24,9 +24,13 @@ def home():
 
 @mailcamp.route("/login")
 def login():
-	"""Home page"""
+	"""Login page"""
 	return render_template("login.html")
 
+@mailcamp.route("/mailcamplist")
+def mailcamplist():
+    
+    
 OUTPUT_DIR = os.path.abspath("/output")
 
 
